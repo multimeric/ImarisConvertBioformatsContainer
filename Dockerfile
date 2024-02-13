@@ -25,4 +25,4 @@ RUN cmake .. -DJRE_HOME="/usr/lib/jvm/java-11-openjdk-amd64" -DCMAKE_BUILD_TYPE=
 RUN make
 RUN make install
 WORKDIR Release
-ENTRYPOINT ["./ImarisConvertBioformats"]
+ENTRYPOINT ["/opt/ImarisConvertBioformats/ImarisConvertBioformats/build/Release/ImarisConvertBioformats"]
